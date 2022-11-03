@@ -1,14 +1,10 @@
-﻿Console.WriteLine("Введите порядковый номер дня недели");
-int a = Convert.ToInt32(Console.ReadLine());
-if (a > 5 && a < 8) 
+﻿void Day(int daynumber)
 {
-Console.WriteLine("Ура, сегодня выходной!");
+    if (daynumber > 0 & daynumber < 6) Console.WriteLine("Сегодня рабочий день");
+    else if (daynumber > 5 & daynumber < 8) Console.WriteLine("Сегодня выходной");
+    else Console.WriteLine("Вы ввели неверный день недели");
 }
-else if (a > 0 && a < 6)
-{
-Console.WriteLine("Вставай, иди на работу!");    
-}
-else
-{
-Console.WriteLine("Хорошая пятница вчера была, да?"); 
-}
+
+Console.WriteLine("Введите номер дня недели");
+int daynumber = Convert.ToInt32(Console.ReadLine());
+Day(daynumber);
