@@ -1,7 +1,8 @@
 ﻿void Tri(int a)
 {
 int b = a % 100 / 10;
-Console.WriteLine($"вторая цифра в числе: {b}");
+if (a > 99 & a < 1000) Console.WriteLine($"вторая цифра в числе: {b}");
+else Console.WriteLine("Вы ввели неверное число");
 }
 
 Console.WriteLine("Введите трёхзначное целое число");
